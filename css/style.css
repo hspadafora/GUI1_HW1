@@ -1,0 +1,121 @@
+﻿/*
+File: 2_style.css
+
+GUI Assignment: HW 1 - Set up, GitHub and First Web Page
+
+Created by: Hunter Spadafora, hunter_spadafora@student.uml.edu
+Created on: 5/25/2022
+
+Description:
+This is my CSS stylesheet for my GUI I assignment 1.  It is not my first time using CSS so I might not have as many comments.
+
+Copyright (c) 2022 by Hunter Spadafora. All rights reserved.
+May be freely copied or excerpted for educational purposes with credit
+to the author.
+Most recent update by HZS on 5/25/2022
+*/
+
+
+/* Overall properties */
+html {
+    margin: 10px 5%;
+    --muted-blue: #7eabdf;
+    --reading-width: 600px;
+    background-color: rgb(180, 180, 180);
+}
+* {
+    font-family: serif;
+}
+
+
+
+header {
+    max-width: var(--reading-width);
+    text-align: justify;
+}
+
+/* Section boxes */
+.section {
+    border: solid rgb(0, 184, 0) 0.2em;
+    background-color: gainsboro;
+    float: left;
+    padding: 1px 1em 1em 1em;
+    box-sizing:border-box;
+}
+
+#main-body p {
+    max-width: var(--reading-width);
+    text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+
+
+
+/* Makes abbr text clearer */
+abbr {
+    text-decoration-style: solid;
+    text-underline-offset: 10%;
+    text-decoration-thickness: 1px;
+    color: rgb(212, 0, 202);
+    font-weight: bold;
+}
+abbr:hover {
+    color: red;
+}
+
+
+
+ol {
+    padding: 0em 1em;
+}
+
+li {
+    padding-left: 0.5em;
+    max-width: var(--reading-width);
+    text-align: justify;
+    padding: 0.5em;
+}
+
+td, th {
+    border: solid 1px black;
+    padding: 0.8em;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+
+/* Table of contents fixed to the bottom left of the web page. */
+#table-of-contents {
+    position: fixed;
+    bottom: 25px;
+    color: blue;
+    border: 1px solid;
+    background-color: skyblue;
+    text-align: center;
+}
+
+#table-of-contents legend {
+    border: solid 1px;
+    background-color: skyblue;
+}
+
+
+
+footer {
+    margin-top: 1em;
+    text-align: center;
+    background-color: var(--muted-blue);
+    padding: 0.1em;
+    clear: both;
+}
+
+#meant-for {
+    max-width: var(--reading-width);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
